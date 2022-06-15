@@ -1,0 +1,82 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  background-color: rgb(250, 247, 247);
+}
+
+.title,
+.footer {
+  margin: auto;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.title,
+.footer {
+  background: rgba(247, 237, 237, 0.94);
+  color: rgb(12, 12, 12);
+}
+
+.footer {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.footer a {
+  text-decoration: none;
+  color: black;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: rgb(255, 255, 255); */
+  width: 100vw;
+  justify-content: center;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.gallery img {
+  width: calc(98%);
+  max-width: 500px;
+  object-fit: cover;
+  margin: 5px;
+  border-radius: 5px;
+  padding: 0;
+}
+
+img:hover {
+  opacity: 0.8;
+  transition: ease 300ms;
+}
+
+/* Common Media Query Breakpoints: 
+      320px — 480px: Mobile devices
+      481px — 768px: iPads, Tablets
+      769px — 1024px: Small screens, laptops
+      1025px — 1200px: Desktops, large screens
+      1201px and more —  Extra large screens, TV
+  */
+@media only screen and (min-width: 800px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .gallery {
+    padding: 0;
+  }
+
+  .gallery img {
+    max-width: 500px;
+  }
+}

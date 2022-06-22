@@ -46,10 +46,11 @@ const kitchenTable = new galleryImage(
   "images/kitchen-table-color_GalleryImg-1500px-long.jpg",
   "Kitchen Table",
   "Oakland, CA",
-  "Evening light through the kitchen window"
+  "Evening light through the kitchen window",
+  "Dried flowers in a vase on a table in soft evening light"
 );
 
-galleryImages.push(testImg); // appends testImg to the galleryImages list, using the galleryImage class template
+galleryImages.push(testImg, kitchenTable); // appends testImg to the galleryImages list, using the galleryImage class template
 
 // for each object in galleryImages, log the title
 for (let i = 0; i < galleryImages.length; i++) {

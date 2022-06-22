@@ -42,6 +42,13 @@ const testImg = new galleryImage(
   "alt text for Camelias"
 );
 
+const kitchenTable = new galleryImage(
+  "images/kitchen-table-color_GalleryImg-1500px-long.jpg",
+  "Kitchen Table",
+  "Oakland, CA",
+  "Evening light through the kitchen window"
+);
+
 galleryImages.push(testImg); // appends testImg to the galleryImages list, using the galleryImage class template
 
 // for each object in galleryImages, log the title

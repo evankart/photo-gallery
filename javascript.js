@@ -1,3 +1,5 @@
+// TO DO: Use php to automatically add all images in the "images" folder to the page (and pull their metadata?)
+
 class galleryImage {
   constructor(url, title, location, caption, alt) {
     this.url = url;
@@ -50,7 +52,15 @@ const kitchenTable = new galleryImage(
   "Dried flowers in a vase on a table in soft evening light"
 );
 
-galleryImages.push(testImg, kitchenTable); // appends testImg to the galleryImages list, using the galleryImage class template
+let ferry = new galleryImage(
+  "images/ferry-bw-film-borders_GalleryImg-1500px-long.jpg",
+  "Ferry",
+  "Seattle",
+  "Ferry",
+  "Black and white image of a Seattle ferry"
+);
+
+galleryImages.push(testImg, kitchenTable, ferry); // appends testImg to the galleryImages list, using the galleryImage class template
 
 // for each object in galleryImages, log the title
 for (let i = 0; i < galleryImages.length; i++) {
